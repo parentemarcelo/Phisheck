@@ -2,6 +2,8 @@
 
 **Phishing warnings for Chrome, computed entirely on your computer.**
 
+> **Note:** Phisheck has been submitted to the Chrome Web Store and is pending review. A direct link will be added here once it is approved.
+
 Phisheck checks every page you open with a machine-learning model that runs inside the
 extension. If a page looks like phishing, a red bar appears at the top of the page and the
 toolbar button shows a red badge. Nothing is shown for normal pages. Phisheck makes no network
