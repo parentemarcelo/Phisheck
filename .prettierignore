@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+package-lock.json
+*.md
+shared/fixtures/
+# The trained model (compact, deterministic JSON written by the exporter)
+models/model.json
+# E2E fixture pages: formatting changes would change their feature values
+extension/e2e/fixtures/

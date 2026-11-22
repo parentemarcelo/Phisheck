@@ -1,0 +1,67 @@
+# Public repository: the extension, the feature extractor and the trained model only.
+# The training pipeline, datasets and internal docs are kept in a private repository.
+
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+/release/
+
+# AI assistant files and internal docs
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+/docs/
+
+# Model training, datasets and evaluation (private)
+/ml/
+/crawler/
+/data/
+/schemas/
+/models/*
+!/models/model.json
+/extension/e2e/real/
+/extension/e2e/perf/
+/extension/scripts/store-assets.mjs
+/extension/scripts/store/
+/shared/src/model-runtime/*.parity.ts
+/vitest.parity.config.ts
+/vitest.real.config.ts
+/vitest.perf.config.ts
+/.dockerignore
+*.ipynb
+*.parquet
+*.jsonl
+*.jsonl.gz
+*.html.gz
+*.csv
+model.txt
+oof.csv
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Keys and sensitive data
+.env
+.env.*
+kaggle.json
+.npmrc
+.pypirc
+*.pem
+*.key
+*.p12
+*.pfx
+*.crx
+id_rsa*
+credentials*.json
+*secret*
+*token*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,23 @@
+{
+  "name": "@phisheck/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./features": "./src/features/index.ts",
+    "./model-runtime": "./src/model-runtime/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p .",
+    "build": "node scripts/build-extractor.mjs"
+  },
+  "dependencies": {
+    "tldts": "7.5.5"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^30.0.0",
+    "jsdom": "^31.0.1",
+    "playwright": "1.65.1"
+  }
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phisheck settings</title>
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Phisheck settings</h1>
+      <p class="lead">
+        Phisheck checks every page you open for signs of phishing, entirely on this computer.
+        Nothing you browse is ever sent anywhere.
+      </p>
+
+      <section aria-labelledby="protection-heading">
+        <h2 id="protection-heading">Protection</h2>
+        <label class="switch-row">
+          <input id="enabled" type="checkbox" role="switch" />
+          <span>
+            <strong>Check pages for phishing</strong>
+            <span class="hint"
+              >When off, Phisheck does not analyse pages and shows no warnings.</span
+            >
+          </span>
+        </label>
+
+        <div class="field">
+          <label for="threshold"
+            >Warning threshold: <output id="threshold-value" for="threshold"></output
+          ></label>
+          <input
+            id="threshold"
+            type="range"
+            min="50"
+            max="99"
+            step="1"
+            aria-describedby="threshold-hint"
+          />
+          <p id="threshold-hint" class="hint">
+            Warn when Phisheck is at least this confident a page is phishing. Lower values catch
+            more phishing but warn about more safe pages. Default: 80%.
+          </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="urls-heading">
+        <h2 id="urls-heading">Trusted pages</h2>
+        <p class="hint">
+          Pages you chose to trust with “Trust this URL”. Phisheck never checks them.
+        </p>
+        <ul id="trusted-urls" class="list"></ul>
+        <p id="trusted-urls-empty" class="empty">No trusted pages.</p>
+      </section>
+
+      <section aria-labelledby="domains-heading">
+        <h2 id="domains-heading">Trusted domains</h2>
+        <p class="hint">Phisheck never checks pages on these domains.</p>
+        <form id="domain-form" class="domain-form" novalidate>
+          <label for="domain-input" class="visually-hidden">Domain</label>
+          <input
+            id="domain-input"
+            type="text"
+            placeholder="example.com"
+            autocomplete="off"
+            spellcheck="false"
+            aria-describedby="domain-error"
+          />
+          <label class="inline">
+            <input id="domain-subdomains" type="checkbox" checked />
+            Include subdomains
+          </label>
+          <button type="submit">Add domain</button>
+        </form>
+        <p id="domain-error" class="error" role="alert"></p>
+        <ul id="trusted-domains" class="list"></ul>
+        <p id="trusted-domains-empty" class="empty">No trusted domains.</p>
+      </section>
+    </main>
+    <script src="settings.js"></script>
+  </body>
+</html>

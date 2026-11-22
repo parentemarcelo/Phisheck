@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Account settings</title>
+  </head>
+  <body>
+    <a href="../settings/profile.html">Profile</a>
+    <a href="./security.html">Security</a>
+    <a href="security.html#2fa">2FA</a>
+    <a href="?tab=billing">Billing</a>
+    <a href=" # ">Menu</a>
+    <a href="//accounts.example.com/logout">Logout</a>
+    <form><input name="nickname" /></form>
+    <form action="mailto:owner@example.net"><textarea name="msg"></textarea></form>
+    <form action="http://www.example.com/insecure"><input type="PASSWORD" name="pw" /></form>
+    <form action="about:blank"><input type="checkbox" name="c" /></form>
+    <iframe src="https://widgets.other.net/w" hidden></iframe>
+    <iframe src="/frame" style="width: 100%; height: 300px"></iframe>
+    <script>
+      document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>

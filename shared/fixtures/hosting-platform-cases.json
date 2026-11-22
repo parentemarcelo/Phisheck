@@ -1,0 +1,17 @@
+{
+  "description": "Shared cases for isHostingPlatform (TS) and platform_tenant (Python): both must agree.",
+  "cases": [
+    ["https://abc.weebly.com/", true],
+    ["https://a.b.weeblysite.com/x", true],
+    ["https://victim.github.io/", true],
+    ["https://sites.google.com/view/x", true],
+    ["https://form.jotform.com/123", true],
+    ["https://SITES.GOOGLE.COM./view/x", true],
+    ["https://weebly.com/", false],
+    ["https://www.weebly.com/", false],
+    ["https://www.google.com/", false],
+    ["https://accounts.google.com/", false],
+    ["https://evilweebly.com/", false],
+    ["https://weebly.com.evil.xyz/", false]
+  ]
+}

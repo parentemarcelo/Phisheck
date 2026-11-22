@@ -1,0 +1,30 @@
+[
+  {
+    "file": "phish-login.html",
+    "url": "https://paypal-secure.account-verify.example.xyz/signin/"
+  },
+  {
+    "file": "legit-home.html",
+    "url": "https://www.example.com/"
+  },
+  {
+    "file": "relative-forms.html",
+    "url": "https://www.example.com/account/settings/index.html"
+  },
+  {
+    "file": "frameset.html",
+    "url": "https://203.0.113.7:8080/index.html"
+  },
+  {
+    "file": "malformed.html",
+    "url": "https://netflix-billing.example.top/update?id=42&ref=mail"
+  },
+  {
+    "file": "empty.html",
+    "url": "https://empty.github.io/"
+  },
+  {
+    "file": "noscript.html",
+    "url": "https://accounts.example.org/signin"
+  }
+]

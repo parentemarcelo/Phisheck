@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Phisheck icon: a shield with a check mark. Source of icon{16,32,48,128}.png
+       (rendered by extension/scripts/store-assets.mjs). -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b6fdc"/>
+      <stop offset="1" stop-color="#1747a6"/>
+    </linearGradient>
+  </defs>
+  <path d="M64 8 L112 25 V60 C112 90 92 110 64 121 C36 110 16 90 16 60 V25 Z" fill="url(#g)"/>
+  <path d="M40 64 L57 81 L89 47" fill="none" stroke="#fff" stroke-width="14"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

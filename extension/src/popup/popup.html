@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Phisheck</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main id="app" aria-live="polite">
+      <header class="head">
+        <span class="icon" aria-hidden="true">⚠</span>
+        <h1 id="verdict">Phisheck</h1>
+      </header>
+      <p id="confidence" class="confidence"></p>
+      <p id="url" class="url"></p>
+      <p id="advice" class="advice"></p>
+      <div class="actions">
+        <button id="trust" type="button" class="primary" hidden>Trust this URL</button>
+        <button id="settings" type="button" class="link">Settings</button>
+      </div>
+      <p id="status" class="status" role="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
