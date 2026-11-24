@@ -2,7 +2,7 @@
 
 **Phishing warnings for Chrome, computed entirely on your computer.**
 
-> **Note:** Phisheck has been submitted to the Chrome Web Store and is pending review. A direct link will be added here once it is approved.
+> **Note:** Phisheck is available for direct install from Chrome Web Store: https://chromewebstore.google.com/detail/phisheck/idhkdfbjdpbfaagkdenpaobmhcjiekjp
 
 Phisheck checks every page you open with a machine-learning model that runs inside the
 extension. If a page looks like phishing, a red bar appears at the top of the page and the
